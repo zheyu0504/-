@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>平藝近人</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="./css/frame.css">
+    <script src="./js/frame.js"></script>
+</head>
+
+<body>
+    <header>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="../index.htm#p1" class="nav-item">街頭塗鴉</a></li>
+                    <li><a href="perform.html#p1" class="nav-item">表演藝術</a></li>
+                    <li><a href="member.html#p1" class="nav-item">意圖夢想</a></li>
+                    <li><a href="law.html#p1" class="nav-item">相關法令</a></li>
+                    <li><a href="ref.html#p1" class="nav-item">參考文獻</a></li>
+                    <li><a href="../narrative.htm" class="nav-item">Home</a></li>
+                </ul>
+            </nav>
+        </header>
+    <div class="slide">
+        <img src="./images/slide/1.png" class="sizer">
+        <img src="./images/slide/1.png" class="active">
+        <img src="./images/slide/2.jpg">
+        <div class="prev">❮</div>
+        <div class="next">❯</div>
+    </div>
+    <div id="p1"></div>
+     <nav class="nav1">
+        <div>
+            <li><a href="#p1">起源</a>
+            <a href="#p2">種類</a></li>
+            <li><a href="#p3">爭議</a>
+            </li>
+            
+        </div>
+    </nav>
+    <div class="pharse">
+        <h2>起源</h2>
+        <div>
+            現在日常生活上所看到的街頭表演，最初被認為是在20世紀60年代藝術家所帶起的流行，然而，早在文藝復興時期，已有許多的藝術家時常在街道上進行公眾表演，這可以說是現代的表演藝術先驅。現代的表演藝術和視覺藝術不同，視覺藝術是指本質上是以作品來呈現藝術，而作品是以視覺目的為創作重點，而表演藝術則是以表演者透過表演來呈現藝術。
+            <img src="./images/perform/p1.jpg" width="50%" style="margin: 10px 25%;">
+        </div>
+    </div>
+    <div id="p2"></div>
+    <div class="pharse">
+        <h2>種類</h2>
+        <div>
+            <b>身體藝術：</b>是指以人的身體作為媒介的藝術形式。像是在路上常常看到的身體彩繪，或是把自己變得像雕像一般動也不動的，都能稱為身體藝術。雖然身體藝術也有被誤稱為「人體藝術」，但傳統習慣上，人體藝術是指展現人的赤裸軀體的藝術，與身體藝術有別。一些極端的身體藝術還包括自殘以及甚至是挑戰肉體極限，曾經就有表演者因連續跳舞至身體疲憊不堪而倒下，還有個著名作品是胸口放本書曬日光浴一直曬到書以外的部分嚴重曬傷。
+            <img src="./images/perform/p2-1.jpg" width="50%" style="margin: 10px 25%;">
+        </div>
+        <div>
+            <b>現場藝術：</b>又譯為臨場藝術或即場藝術，是一種非戲劇的表演形式。它源於視覺藝術家對傳統藝術的超越，強調當下的、現場的、真實的、不拘型式的表演，主張每個人都可以用自己特有的方式來創作。現場藝術為平時最常見的類型，時常能在各個觀光勝地看到，表演者透過一些特技來吸引眾人的目光，像是魔術、溜溜球、鋼鐵特技等各種方式都能稱為現場藝術。
+            <img src="./images/perform/p2-2.jpg" width="50%" style="margin: 10px 25%;">
+        </div>
+    </div>
+    <div id="p3"></div>
+    <div class="pharse">
+        <h2>爭議</h2>
+        <div>
+            許多人認為街頭表演可以為當地帶來人氣，但也有不少人認為街頭藝術會干擾到
+            民眾的日常生活，例如噪音汙染、垃圾滿地、或是因觀看民眾過多而導致街道被人潮堵住等問題，現今政府已規劃出表演區提供表演者們良好的空間與環境。讓表演著們可以專心在表演上，而不用去擔心其他的問題，讓觀眾得到更好的享受。
+            <img src="./images/perform/p3.jpg" width="50%" style="margin: 10px 25%;">
+        </div>
+    </div>
+    <script>
+        $(function(){
+            $(window).scroll(function(){
+                if ($("html").scrollTop() >500) {
+                    $(".nav1").fadeIn(700);                
+                }
+                else{
+                    $(".nav1").fadeOut(100);
+                }
+            });
+        });
+</script>
+</body>
+
+</html>

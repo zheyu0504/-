@@ -1,0 +1,63 @@
+*{
+	text-decoration: none;
+  	font-family: "微軟正黑體";
+}
+
+body {
+	padding: 0;
+  	margin: 0px;
+  	background: #AB977C;
+ }
+
+nav {
+  	padding: 50px;
+  	text-align: center;
+}
+
+#nav-1 {
+ 	 background: #101528;
+}
+
+.link-1 {
+  	padding: 20px 0;
+  	margin: 0 50px;
+	border-top: 4px solid #101528;
+  	border-bottom: 4px solid #101528;
+  	transition: 0.3s ease;
+  	background: #101528;
+  	color: #fff;
+  	font-size: 20px;
+}
+
+.link-1:hover {
+	padding: 6px 0;
+  	border-top: 4px solid #fff;
+  	border-bottom: 4px solid #fff;
+}
+
+.content{
+  	position: relative;
+	padding: 30px;
+	margin: 50px auto 100px;
+  	max-width: 60%;
+  	height: auto;
+  	z-index: 1;
+  	background: #fff;
+  	border-top-left-radius: 6px;
+  	border-top-right-radius: 6px;
+  	border-bottom-left-radius: 6px;
+  	border-bottom-right-radius: 6px;
+  	text-align: left;
+  	box-shadow: 10px 10px #999;
+}
+
+h2{
+  	font-size: 27px;
+  	font-weight: bolder;
+}
+
+span{
+  	font-size: 24px;
+	font-weight: 600;
+	color: #49445C;
+}

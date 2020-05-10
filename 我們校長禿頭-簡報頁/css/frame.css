@@ -1,0 +1,175 @@
+*{
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	text-decoration:none;
+	font-family: "微軟正黑體";
+}
+
+:target:before {
+content: "";
+display: block;
+height: 70px; 
+}
+
+body {
+    background-color: #a4f6a5;
+    background-image: url(../images/1059588697.jpg);
+    padding-bottom: 30px;
+	font-family: "微軟正黑體";
+}
+
+
+img{
+	display: block;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+
+.navbar{
+    padding: 0.5rem 0rem;
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    background: hsla(240, 0%, 50%, 0.8) ;
+    color: #fff;
+    transition: .3s;
+    margin-left: -1px;
+    margin-top: -1px;
+}
+
+.navbar.mini{
+    padding: 0rem;
+}
+
+.navbar>ul{
+    line-height: 70px;
+    display:inline;
+}
+
+.navbar ul li{
+    display:inline;
+    font-weight:bold;
+}
+
+.nav-item{
+    padding: 24px 15px;
+    color: #fff;
+}
+
+.nav-item:hover{
+    background-color:#666666;
+}
+
+.nav-item:hover .nav-item div{
+    display: block;
+}
+
+
+.slide {
+    position: relative;
+    overflow: hidden;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.slide img {
+    display: block;
+    width: 100%;
+}
+
+.slide img:not(.sizer) {
+    position: absolute;
+    top: 0px;
+    left: -100%;
+    transition: left 0.5s;
+}
+
+.slide .sizer {
+    opacity: 0;
+}
+
+.slide img.active { left: 0%; }
+.slide img.active+img { left: 100%; }
+
+.slide .prev,
+.slide .next  {
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #eee;
+    background-color: #111;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: calc(50% - 50px);
+    border-radius: 50px; 
+}
+
+.slide .prev { left: 10px; }
+.slide .next { right: 10px; }
+
+.nav1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    float: left;
+    position: fixed;
+    bottom: 50%;
+    left: 6%;
+}
+
+.nav1 div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    float: left;
+    position: fixed;
+}
+
+nav div a {
+    text-align: center;
+    display: block;
+    padding: 5px;
+    width: 100px;
+    text-decoration: none;
+    color: #000;
+    transition: all 0.5s;
+}
+
+nav div a:hover {
+    background-color: #f8a978;
+    color: #fff;
+}
+
+.pharse {
+    color: #111;
+    background-color: rgba(255, 255, 255, 0.75);
+    margin: 15px 15%;
+    padding: 15px;
+}
+
+.pharse h2 {
+    margin: 0px;
+    border-bottom: 1px solid #111;
+}
+
+.pharse div {
+    letter-spacing: 2px;
+    text-indent: 36px;
+    font-size: 18px;
+}
+
+
+
